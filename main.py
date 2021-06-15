@@ -8,8 +8,8 @@ def write_analyze_column(dataset, column):
             response_mappings[x] += 1
         else:
             response_mappings[x] = 0
-
-    f = open("datasets/%s.txt" % column.replace(" ", "_"), "w")
+    file_name = column.replace(" ", "_").replace("?", "").replace(".", "")
+    f = open("datasets/%s.txt" % file_name, "w")
     for response in response_mappings:
         f.write("%s: %s \n" % (response, response_mappings[response]))
     f.write("Total Responses: %s" % dataset[column].count())
