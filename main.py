@@ -8,9 +8,12 @@ import pandas as pd
 
 mentalhealthtech1 = pd.read_csv("datasets/mental-health-in-tech-2016.csv")
 
+responseMappings = {}
+
 for x in mentalhealthtech1["Do you currently have a mental health disorder?"]:
-    
-
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    if x in responseMappings.keys():
+        responseMappings[x]+=1
+    else:
+        responseMappings[x] = 0
+print(responseMappings)
+print(mentalhealthtech1["Do you currently have a mental health disorder?"].count())
