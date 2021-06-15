@@ -8,8 +8,8 @@ import pandas as pd
 
 mentalhealthtech1 = pd.read_csv("datasets/mental-health-in-tech-2016.csv")
 
-print(mentalhealthtech1)
-
+for x in mentalhealthtech1["Do you currently have a mental health disorder?"]:
+    
 
 
 
