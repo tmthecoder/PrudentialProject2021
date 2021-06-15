@@ -15,5 +15,5 @@ for x in mentalhealthtech1["Do you currently have a mental health disorder?"]:
         responseMappings[x] += 1
     else:
         responseMappings[x] = 0
-print("Response Counts: " + responseMappings)
-print("Total Responses: " + mentalhealthtech1["Do you currently have a mental health disorder?"].count())
+print("Response Counts: %s" % responseMappings)
+print("Total Responses: %s" % mentalhealthtech1["Do you currently have a mental health disorder?"].count())
