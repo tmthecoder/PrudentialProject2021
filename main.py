@@ -6,24 +6,20 @@
 import numpy as np
 import pandas as pd
 
-mentalhealthtech1 = pd.read_csv("datasets/mental-health-in-tech-2016.csv")
 
-responseMappings = {}
+def write_analyze_column(dataset, column):
+    response_mappings = {}
+    for x in dataset[column]:
+        if x in response_mappings.keys():
+            response_mappings[x] += 1
+        else:
+            response_mappings[x] = 0
 
-for x in mentalhealthtech1["Do you currently have a mental health disorder?"]:
-    if x in responseMappings.keys():
-        responseMappings[x] += 1
-    else:
-        responseMappings[x] = 0
-for response in responseMappings:
-    print("%s: %s" %(response, responseMappings[response]))
-print("Total Responses: %s" % mentalhealthtech1["Do you currently have a mental health disorder?"].count())
-
-f = open("datasets/Do_you_currently_have_a_mental_health_disorder.txt", "w")
-for response in responseMappings:
-    f.write("%s: %s \n" %(response, responseMappings[response]))
-f.write("Total Responses: %s" % mentalhealthtech1["Do you currently have a mental health disorder?"].count())
+    f = open("datasets/%s.txt" % column, "w")
+    for response in response_mappings:
+        f.write("%s: %s \n" % (response, response_mappings[response]))
+    f.write("Total Responses: %s" % dataset[column].count())
 
 
-
-
+mental_health_tech1 = pd.read_csv("datasets/mental-health-in-tech-2016.csv")
+write_analyze_column(mental_health_tech1, "Do you currently have a mental health disorder?")
