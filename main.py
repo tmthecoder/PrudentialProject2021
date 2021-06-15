@@ -20,7 +20,10 @@ for response in responseMappings:
 print("Total Responses: %s" % mentalhealthtech1["Do you currently have a mental health disorder?"].count())
 
 f = open("datasets/Do_you_currently_have_a_mental_health_disorder.txt", "w")
-f.write("Response Counts: %s" % responseMappings)
+for response in responseMappings:
+    f.write("%s: %s \n" %(response, responseMappings[response]))
 f.write("Total Responses: %s" % mentalhealthtech1["Do you currently have a mental health disorder?"].count())
+
+
 
 
