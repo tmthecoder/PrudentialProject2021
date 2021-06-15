@@ -1,0 +1,1 @@
+Response Counts: {'No': 530, 'Yes': 574, 'Maybe': 326}Total Responses: 1433
