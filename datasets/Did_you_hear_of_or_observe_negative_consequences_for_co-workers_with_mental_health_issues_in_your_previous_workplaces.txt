@@ -1,0 +1,5 @@
+None of them: 757 
+Some of them: 443 
+nan: 168 
+Yes, all of them: 61 
+Total Responses: 1264

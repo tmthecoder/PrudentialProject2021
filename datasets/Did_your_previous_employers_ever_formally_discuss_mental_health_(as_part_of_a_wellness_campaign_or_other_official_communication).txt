@@ -1,0 +1,6 @@
+I don't know: 85 
+None did: 889 
+Some did: 254 
+nan: 168 
+Yes, they all did: 32 
+Total Responses: 1264

@@ -1,0 +1,5 @@
+nan: 1288 
+I'm not sure: 65 
+Yes: 35 
+No: 41 
+Total Responses: 144

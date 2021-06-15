@@ -1,0 +1,5 @@
+Some of my previous employers: 739 
+No, at none of my previous employers: 429 
+Yes, at all of my previous employers: 93 
+nan: 168 
+Total Responses: 1264

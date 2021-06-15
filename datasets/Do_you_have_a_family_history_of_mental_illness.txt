@@ -1,0 +1,4 @@
+No: 487 
+Yes: 669 
+I don't know: 274 
+Total Responses: 1433

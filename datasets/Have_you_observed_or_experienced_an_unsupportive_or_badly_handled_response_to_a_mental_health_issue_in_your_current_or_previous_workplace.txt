@@ -1,0 +1,6 @@
+No: 566 
+Maybe/Not sure: 345 
+Yes, I experienced: 166 
+Yes, I observed: 263 
+nan: 88 
+Total Responses: 1344
